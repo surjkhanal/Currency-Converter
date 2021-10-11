@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main>
+        <div class="container center">
+            <h1>Currency Converter</h1>
+            <form action="" name="currency-form" class="center">
+                <div class="fields">
+                    <input type="number" name="c-value" required>
+                    <select name="" id="c-from" required >
+                        <option selected disabled>From</option>
+                        <option value="AED">AED : United Arab Emirates Dirham</option>
+                        <option value="BTC">BTC : Bitcoin</option>
+                        <option value="EUR">EUR : Euro</option>
+                        <option value="JPY">JPY : Japanese Yen</option>
+                        <option value="INR">INR : Indian Rupee</option>
+                        <option value="USD">USD : United States Dollar</option>
+                        <option value="QAR">QAR : Qatari Rial</option>
+                    </select>
+                    <select name="" id="c-to" required>
+                        <option selected disabled>To</option>
+                        <option value="AED">AED : United Arab Emirates Dirham</option>
+                        <option value="BTC">BTC : Bitcoin</option>
+                        <option value="EUR">EUR : Euro</option>
+                        <option value="JPY">JPY : Japanese Yen</option>
+                        <option value="INR">INR : Indian Rupee</option>
+                        <option value="USD">USD : United States Dollar</option>
+                        <option value="QAR">QAR : Qatari Rial</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Convert">
+            </form>
+            <h2 id="result">5 Rs : 120umit</h2>
+
+
+        </div>
+    </main>
+    
+</body>
+</html>
