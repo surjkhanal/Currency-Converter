@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <main>
+    <main >
         <div class="container center">
             <h1>Currency Converter</h1>
             <form action="" name="currency-form" class="center">
@@ -39,12 +39,36 @@
                 </div>
 
                 <input type="submit" value="Convert">
+                <a href="#showcase">See chart</a>
             </form>
+
             <h2 id="result">5 Rs : 120umit</h2>
 
 
         </div>
     </main>
+    <div id="showcase" class="center">
+
+        <div class="showcase-container ">
+            <div id="select-container">
+                <span>Select a currency</span>
+                <select name="" id="compare-select-currency">
+                    <option selected disabled>Select a currency</option>
+                    <option value="AED">AED : United Arab Emirates Dirham</option>
+                    <option value="BTC">BTC : Bitcoin</option>
+                    <option value="EUR">EUR : Euro</option>
+                    <option value="JPY">JPY : Japanese Yen</option>
+                    <option value="INR">INR : Indian Rupee</option>
+                    <option value="USD">USD : United States Dollar</option>
+                    <option value="QAR">QAR : Qatari Rial</option>
+                </select>
+            </div>
+            <div id="showcase-result">
+            </div>
+            
+        </div>
+
+    </div>
     
 </body>
 </html>

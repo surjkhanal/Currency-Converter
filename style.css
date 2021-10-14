@@ -8,6 +8,9 @@ body {
     font-size:62.5%;
     font-family: monospace;
 }
+main{
+    height:100vh;
+}
 .center {
     display: flex;
     align-items: center;
@@ -17,10 +20,19 @@ form{
     margin:40px;
     flex-direction: column;
 }
+form a{
+    color: rgb(214, 18, 18);
+    font-size:1.2rem;
+    text-decoration: none;  
+}
 .container{
+    padding:30px;
     flex-direction: column;
     margin: 0 auto;
-    height: 100vh;
+    border-radius: 15px;
+    box-shadow:1px 0px 10px -6px rgb(8 8 8);
+    width:fit-content;
+    margin-top: 200px;
 }
 .container h1{
     font-size: 4rem;
@@ -49,11 +61,59 @@ input[type="submit"]{
     border-radius: 15px;
     display:none;
 }
+/* ShowCase */
+#showcase{
+    height:100vh;
+    background: rgb(0, 0, 0);
+    color: #fff;
+}
+.showcase-container {
+    box-shadow:-1px 0px 11px 1px #ea0f1e;
+    padding:25px;
+    max-width:65%;
+    border-radius: 15px;
+}
+#select-container span{
+    font-size:2rem;  
+}
+#select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+
+}
+#select-container select{
+    font-size:1.2rem;
+    background-color:#ea0f1e;
+    border: none;
+    outline: none;
+    color: #fff;
+    
+}
+#showcase-result {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    justify-content: center;
+}
+#showcase-result .box{
+    border: 1px solid #ea0f1e;
+    display: inline-block;
+    border-radius:10px;
+    font-size: 1.75rem;
+    padding:15px 30px;
+    margin:15px;
+}
 
 
-@media screen and (max-width:550px){
+
+
+
+
+@media screen and (max-width:750px){
     h1 {
-        font-size:2rem!important;
+        font-size:1rem!important;
     }
     input,select{
         font-size: 1rem;
@@ -62,5 +122,43 @@ input[type="submit"]{
         display:block;
         margin:20px auto;
     }
+    
+    .container{
+    /* box-shadow:none; */
+    /* margin:50px; */
+    padding: 10px;
+    }
+    form{
+        padding:5px;
+        margin: 10px;
+    }
+
+
+    .showcase-container {
+        /* padding:15px; */
+        max-width:80%;
+    }
+    #select-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+    
+    }
+    #select-container span{
+        font-size:1.2rem;
+    }
+    #select-container select
+    {
+        font-size:1.2em;  
+        width: fit-content;
+    }
+    #showcase-result .box{
+        font-size:0.8rem;
+        padding:10px 20px;
+        margin:8px;
+    }
+
     
 }
