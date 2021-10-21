@@ -59,6 +59,8 @@ input[type="submit"]{
 #exchange{
     font-size:1.3rem;
     margin-bottom: 2em;
+    display:none;
+
 }
 #result{
     font-size:1.3rem;
