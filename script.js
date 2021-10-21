@@ -6,6 +6,7 @@ let API = 'https://freecurrencyapi.net/api/v2/latest?apikey=f039b260-2bf0-11ec-b
 let fromMenu = document.getElementById("c-from");
 let toMenu = document.getElementById("c-to");
 let resultBlock = document.getElementById("result");
+let exchangeBlock = document.getElementById("exchange");
 currencyForm.addEventListener("submit",(event)=>{
     event.preventDefault();
     let currentValue =event.target["c-value"].value;
@@ -24,7 +25,10 @@ currencyForm.addEventListener("submit",(event)=>{
                 console.log(result)
                 resultBlock.innerText = currentValue+ " "+currentC +" : "+result+" "+targetC;
                 resultBlock.style.display = "block";
+                exchangeBlock.innerText = 1+ " "+currentC +" : "+rates[targetC]+" "+targetC;
+                exchangeBlock.style.display = "block";
             }
+
         })
     })
 })

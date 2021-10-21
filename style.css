@@ -53,6 +53,13 @@ input[type="submit"]{
     background-color:rgb(37, 190, 96);
     border: none;
 }
+#exchange::before{
+    content:'Exchange Rate of '
+}
+#exchange{
+    font-size:1.3rem;
+    margin-bottom: 2em;
+}
 #result{
     font-size:1.3rem;
     padding:5px 30px;
